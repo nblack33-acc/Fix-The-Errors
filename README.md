@@ -12,3 +12,10 @@
 6. The Team Lead should do the following:
     - Review the pull request
     - If everything looks okay, then merge the changes.
+
+
+### If you finish this, then work on the next part.
+
+1. Connect your github account to your VM or your Pi if you have it setup.
+2. Use vim to make changes to the data files.
+    - Add a separate git feature description to each data file.
