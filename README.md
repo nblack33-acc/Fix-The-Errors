@@ -19,3 +19,6 @@
 1. Connect your github account to your VM or your Pi if you have it setup.
 2. Use vim to make changes to the data files.
     - Add a separate git feature description to each data file.
+    - Create a pull request for the changes.
+3. Team Lead:
+    - Review and merge the changes if there are no merge conflicts.
