@@ -1,18 +1,16 @@
 !#/bin/bash
-# author: <Next Black ,Tuan Nguyen,David  >
+# author: <Nex Black ,Tuan Nguyen,David  >
 
 # Create a directory called new_data
 mkdir new_data
 cd new_data
-# Create 5 empty files in the new_data directory
+# Create 5 empty files in the new_data directory (separated by spaces)
 touch data1 data2 data3 data4 data5 
 
 # Output 'author: <username>' to each data file
-echo author %TuanNguyen% > data1 
-echo author %TuanNguyen% > data2
-echo author %TuanNguyen% > data3
-echo author %TuanNguyen% > data4
-echo author %TuanNguyen% > data5
+
+echo author %username% | tee data 1 data2 data3 data4 data5 
 
 # Append 'date: ' and the date in MM-DD-YYYY format to each data file
-echo 'date' $(date +%m-%d-%Y)  
+
+echo $(date) | tee data1 data2 data3 data4 data5 
