@@ -1,5 +1,5 @@
-!#/bin/bass
-# author: <Next Black and Tuan Nguyen and David Bortolotto >
+!#/bin/bash
+# author: <Nex Black ,Tuan Nguyen,David  >
 
 # Create a directory called new_data
 mkdir new_data
@@ -9,9 +9,8 @@ touch data1 data2 data3 data4 data5
 
 # Output 'author: <username>' to each data file
 
-echo author %DavidBortolotto% | tee data 1 data2 data3 data4 data5 
+echo author %username% | tee data 1 data2 data3 data4 data5 
 
 # Append 'date: ' and the date in MM-DD-YYYY format to each data file
 
 echo $(date) | tee data1 data2 data3 data4 data5 
-
