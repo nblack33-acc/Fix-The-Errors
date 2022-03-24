@@ -9,18 +9,9 @@ touch data1 data2 data3 data4 data5
 
 # Output 'author: <username>' to each data file
 
-echo author %DavidBortolotto% data1 
-echo author %DavidBortolotto% data2 
-echo author %DavidBortolotto% data3
-echo author %DavidBortolotto% data4
-echo author %DavidBortolotto% data5
+echo author %DavidBortolotto% | tee data 1 data2 data3 data4 data5 
 
 # Append 'date: ' and the date in MM-DD-YYYY format to each data file
 
-echo $(date) > data1
-echo $(date) > data2
-echo $(date) > data3
-echo $(date) > data4
-echo $(date) > data5
-
+echo $(date) | tee data1 data2 data3 data4 data5 
 
